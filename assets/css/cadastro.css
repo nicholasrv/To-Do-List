@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap');
+
+body {
+  background-image: url('https://static.wixstatic.com/media/85cea4_d3af6246304e40d3bc60973950befc4e~mv2.gif/v1/fit/w_1000,h_500,al_c,q_80/file.gif') !important;
+  background-position: bottom !important;
+}
+
+header {
+  height: 100px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80vh;
+}
+
+form {
+  color: white;
+  padding: 30px;
+  backdrop-filter: blur(3px);
+  margin-top: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+}
+
+legend {
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 0px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.content-radio,
+.radio,
+.content-checkbox {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio input {
+  width: 15px;
+}
+
+.content-checkbox div {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  margin: 15px 0px;
+  width: 100%;
+  border-radius: 9px;
+  padding: 7px;
+  transition: 0.5s ease-in;
+}
+
+input:hover::placeholder {
+  color: white;
+}
+
+input:hover {
+  background-color: #333;
+}
+
+.content-date {
+  transition: 0.5s ease-in;
+}
+
+.content-date input:hover {
+  color: white;
+}
+
+select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+}
+select:hover,
+option:hover {
+  background-color: #333;
+  color: white;
+}
+
+.content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: #222222b3;
+  color: white;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.enviar:hover {
+  background-color: #42a342b3;
+}
+
+.limpar:hover {
+  background-color: #6294b3b3;
+}
+
+/*  Seção Pontos Turísticos  */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.turisticos div,
+.fotos .content-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0px 20px;
+  justify-content: center;
+}
+
+.fotos .content-fotos {
+  gap: 250px;
+}
+
+.title-fotos {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.fotos .content-img {
+  margin-top: 250px;
+  gap: 200px;
+}
+
+.turisticos img,
+.fotos .icons-pessoal {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-position: bottom;
+}
+
+.turisticos img {
+  width: 400px;
+}
+
+.content-img {
+  height: 250px;
+  width: 200px;
+  background-color: rgba(238, 238, 238, 0.6);
+  border-radius: 10px;
+  transition: 0.8s ease;
+}
+
+.content-img:hover {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.span-img {
+  height: 30px;
+  width: 30px;
+  transition: 0.5s ease;
+}
+
+.span-img:hover {
+  transform: scale(1.1);
+}
+
+.content-fotos a {
+  padding-left: 45px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1139px) {
+  .fotos .content-fotos {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .fotos .content-img {
+    margin: 50px 0px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .fotos .content-fotos {
+    gap: 10px;
+  }
+  .fotos .content-img {
+    margin: 50px 0px;
+  }
+  .turisticos div {
+    margin: 0px;
+  }
+  
+}
+
+@media only screen and (max-width: 410px) {
+  .turisticos img {
+    width: 300px;
+  }
+
+  form {
+    width: 300px;
+  }
+  .content-radio,
+  .radio,
+  .content-checkbox {
+    gap: 5px;
+    margin: 5px 0px;
+    justify-content: space-around;
+  }
+}

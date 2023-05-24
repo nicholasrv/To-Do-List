@@ -1,0 +1,105 @@
+<html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./assets/css/tarefas.css">
+  <!--   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+  <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ----------------------------- sweet alert ----------------------------- -->
+  <!--   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+  <!-- <script src="/assets/js/utils.js" defer=""></script>
+  <script src="/assets/js/tarefas_pendentes.js" defer=""></script>
+  <script src="/assets/js/tarefas_concluidas.js" defer=""></script> -->
+  <script src="./assets/js/tarefas2.js" defer=""></script>
+  <!-- <script src="assets/js/script.js"></script> -->
+
+  <title>To-Do App</title>
+<style type="text/css">.vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{background:#fff}.vue-notification,.vue-notification-template{display:block;box-sizing:border-box;text-align:left}.vue-notification{font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44a4fc;border-left:5px solid #187fe7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#e54d42;border-left-color:#b82e24}.vue-notification.success{background:#68cd86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter,.vn-fade-leave-to{opacity:0}</style><meta id="bbafmabaelnnkondpfpjmdklbmfnbmol"></head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Tarefas</a>
+    </nav>
+
+    <div class="user-info">
+      <p id="nomeUsuarioEmTarefas"></p>
+      <!-- <div class="user-image"></div> -->
+      <p id="closeApp" onclick="encerrarSessao()">Finalizar sessão
+      </p>
+    </div>
+  </header>
+
+<main>
+  <form class="nova-tarefa">
+    <!-- <div class="not-done "></div> -->
+    <input id="novaTarefa" type="text" placeholder="Descrição da tarefa">
+
+    <div>
+      <input type="radio" name="grupoRadio" checked="" value="false"> Pendente
+      <input type="radio" name="grupoRadio" value="true"> Concluída
+    </div>
+
+    <button id="botaoTarefas">
+      <img src="./assets/images/icons8-adicionar-regra-100.png" alt="Adicionar uma nova tarefa">
+    </button>
+
+    
+  </form>
+
+
+  <ul class="tarefas-pendentes">
+  <!-- <li class="tarefa">
+        <div class="not-done" id=""></div>
+        <div class="descricao">
+            <p class="nome"></p>
+            <p class="nome"></p>
+            <p class="timestamp"><i class="far fa-calendar-alt"></i> </p>
+        </div></li> -->
+  </ul>
+
+  <h2 class="tarefas-terminadas-titulo">Tarefas terminadas</h2>
+  <ul class="tarefas-terminadas">
+ 
+    <!-- <li class="tarefa">
+      <div class="done"></div>
+      <div class="descricao">
+        <p class="nome"></p>
+        <div>
+          <button>
+            <i id="${tarefa.id}" class="fas fa-undo-alt change"></i> -->
+            <!-- <img src="./assets/images/icons8-retornar-50.png" alt="Voltar"> -->
+          <!-- </button>
+          <button><i id="${tarefa.id}" class="far fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </li>
+
+    <li class="tarefa">
+      <div class="done"></div>
+      <div class="descricao">
+        <p class="nome"></p>
+        <div>
+          <button><i id="${tarefa.id}" class="fas fa-undo-alt change"></i></button>
+          <button><i id="${tarefa.id}" class="far fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </li> -->
+
+
+  </ul>
+
+</main>
+
+</body>
+</html>
